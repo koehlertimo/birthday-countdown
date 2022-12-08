@@ -3,11 +3,9 @@ var year = today.getFullYear()
 
 console.log(today)
 
-if(today.getDate() > 20 && today.getMonth() >= 10){
+if((today.getDate() > 20 && today.getMonth() == 10 || today.getMonth() > 10)){
     year++;
 }
-
-
 
 // Set the date we're counting down to
 var countDownDate = new Date(year, 10, 20).getTime();
